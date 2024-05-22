@@ -1,0 +1,60 @@
+{
+  "2024-05-22": {
+    "num": 13,
+    "startingGrid": [
+      [
+        "orange",
+        "yellow",
+        "orange",
+        "yellow"
+      ],
+      [
+        "green",
+        "orange",
+        "yellow",
+        "red"
+      ],
+      [
+        "green",
+        "green",
+        "green",
+        "orange"
+      ],
+      [
+        "yellow",
+        "red",
+        "red",
+        "red"
+      ]
+    ]
+  },
+  "2024-05-23": {
+    "num": 14,
+    "startingGrid": [
+      [
+        "yellow",
+        "orange",
+        "yellow",
+        "orange"
+      ],
+      [
+        "orange",
+        "yellow",
+        "green",
+        "red"
+      ],
+      [
+        "red",
+        "red",
+        "orange",
+        "yellow"
+      ],
+      [
+        "red",
+        "green",
+        "green",
+        "green"
+      ]
+    ]
+  }
+}
