@@ -14,13 +14,13 @@ const Cell: React.FC<CellProps> = ({ gridCell, setIsFrozen }) => {
   const color = () => { 
     switch (gridCell.color) {
       case 'red':
-        return gridCell.isFrozen ? 'bg-red-600' : 'bg-red-300';
+        return gridCell.isFrozen ? 'bg-red-500 border-4 border-red-800' : 'bg-red-500';
       case 'green':
-        return gridCell.isFrozen ? 'bg-green-600' : 'bg-green-300';
+        return gridCell.isFrozen ? 'bg-lime-400 border-4 border-lime-700' : 'bg-lime-400';
       case 'yellow':
-        return gridCell.isFrozen ? 'bg-yellow-600' : 'bg-yellow-300';
+        return gridCell.isFrozen ? 'bg-yellow-300 border-4 border-yellow-500' : 'bg-yellow-300';
       case 'orange':
-        return gridCell.isFrozen ? 'bg-orange-600' : 'bg-orange-300';
+        return gridCell.isFrozen ? 'bg-orange-400 border-4 border-orange-600' : 'bg-orange-400';
       default:
         return 'bg-gray-300';
     }
