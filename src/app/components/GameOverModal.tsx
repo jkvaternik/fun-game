@@ -1,5 +1,4 @@
 import React from "react";
-import { Montserrat } from "next/font/google";
 import { ModalComponent } from "./ModalComponent";
 import { getShareableEmojiScore } from "../utils";
 import { GridCell } from "../hooks/useDailyPuzzle";
