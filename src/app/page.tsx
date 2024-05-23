@@ -11,7 +11,7 @@ export default function Home() {
   const puzzle = useDailyPuzzle();
 
   const [showInstructionsModal, setShowInstructionsModal] = React.useState<boolean>(false);
-  const [grid, setGrid] = React.useState<GridCell[][]>(getLocalStorageOrDefault('grid', puzzle?.startingGrid ?? [])); 
+  const [grid, setGrid] = React.useState<GridCell[][]>(getLocalStorageOrDefault('grid', [])); 
   const [lives, setLives] = React.useState<number>(getLocalStorageOrDefault('lives', 3));
   const [isGameOver, setIsGameOver] = React.useState<boolean>(getLocalStorageOrDefault('isGameOver', false));
   const [showModal, setShowModal] = React.useState<boolean>(getLocalStorageOrDefault('isGameOver', false));
