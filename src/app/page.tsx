@@ -89,7 +89,7 @@ export default function Home() {
   });
 
   return (
-    <main className="flex min-h-screen flex-col items-center mt-24 p-12 gap-5">
+    <main className="flex flex-col items-center mt-12 p-12 gap-5">
         <h1 className="font-sans text-amber-700 font-semibold text-2xl">SECTIONS</h1>
       <InstructionsModal isOpen={showInstructionsModal} onClose={() => setShowInstructionsModal(false)} />
       <div className="flex flex-row gap-2 items-center">
