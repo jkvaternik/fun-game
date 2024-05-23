@@ -60,64 +60,204 @@
   "2024-05-24": {
     "num": 15,
     "startingGrid": [
-      [ "red", "orange", "orange", "green" ],
-  [ "yellow", "green", "red", "yellow" ],
-  [ "red", "green", "green", "orange" ],
-  [ "red", "yellow", "orange", "yellow" ]
+      [
+        "red",
+        "orange",
+        "orange",
+        "green"
+      ],
+      [
+        "yellow",
+        "green",
+        "red",
+        "yellow"
+      ],
+      [
+        "red",
+        "green",
+        "green",
+        "orange"
+      ],
+      [
+        "red",
+        "yellow",
+        "orange",
+        "yellow"
+      ]
     ]
   },
   "2024-05-25": {
     "num": 16,
     "startingGrid": [
-      [ "green", "orange", "orange", "green" ],
-  [ "red", "green", "green", "red" ],
-  [ "orange", "red", "red", "yellow" ],
-  [ "orange", "yellow", "yellow", "yellow" ]
+      [
+        "green",
+        "orange",
+        "orange",
+        "green"
+      ],
+      [
+        "red",
+        "green",
+        "green",
+        "red"
+      ],
+      [
+        "orange",
+        "red",
+        "red",
+        "yellow"
+      ],
+      [
+        "orange",
+        "yellow",
+        "yellow",
+        "yellow"
+      ]
     ]
   },
   "2024-05-26": {
     "num": 17,
     "startingGrid": [
-      [ "green", "orange", "red", "orange" ],
-  [ "orange", "yellow", "green", "red" ],
-  [ "red", "green", "green", "orange" ],
-  [ "red", "yellow", "yellow", "yellow" ]
+      [
+        "green",
+        "orange",
+        "red",
+        "orange"
+      ],
+      [
+        "orange",
+        "yellow",
+        "green",
+        "red"
+      ],
+      [
+        "red",
+        "green",
+        "green",
+        "orange"
+      ],
+      [
+        "red",
+        "yellow",
+        "yellow",
+        "yellow"
+      ]
     ]
   },
   "2024-05-27": {
     "num": 18,
     "startingGrid": [
-      [ "yellow", "yellow", "yellow", "orange" ],
-  [ "red", "yellow", "green", "green" ],
-  [ "green", "orange", "red", "green" ],
-  [ "orange", "red", "orange", "red" ]
+      [
+        "yellow",
+        "yellow",
+        "yellow",
+        "orange"
+      ],
+      [
+        "red",
+        "yellow",
+        "green",
+        "green"
+      ],
+      [
+        "green",
+        "orange",
+        "red",
+        "green"
+      ],
+      [
+        "orange",
+        "red",
+        "orange",
+        "red"
+      ]
     ]
   },
   "2024-05-28": {
     "num": 19,
     "startingGrid": [
-      [ "yellow", "red", "orange", "red" ],
-  [ "red", "yellow", "green", "yellow" ],
-  [ "orange", "green", "orange", "yellow" ],
-  [ "orange", "green", "red", "green" ]
+      [
+        "yellow",
+        "red",
+        "orange",
+        "red"
+      ],
+      [
+        "red",
+        "yellow",
+        "green",
+        "yellow"
+      ],
+      [
+        "orange",
+        "green",
+        "orange",
+        "yellow"
+      ],
+      [
+        "orange",
+        "green",
+        "red",
+        "green"
+      ]
     ]
   },
   "2024-05-29": {
     "num": 20,
     "startingGrid": [
-      [ "orange", "yellow", "green", "orange" ],
-  [ "yellow", "red", "red", "yellow" ],
-  [ "red", "orange", "yellow", "red" ],
-  [ "orange", "green", "green", "green" ]
+      [
+        "orange",
+        "yellow",
+        "green",
+        "orange"
+      ],
+      [
+        "yellow",
+        "red",
+        "red",
+        "yellow"
+      ],
+      [
+        "red",
+        "orange",
+        "yellow",
+        "red"
+      ],
+      [
+        "orange",
+        "green",
+        "green",
+        "green"
+      ]
     ]
   },
   "2024-05-30": {
     "num": 21,
     "startingGrid": [
-      [ "orange", "green", "green", "red" ],
-  [ "red", "yellow", "orange", "red" ],
-  [ "orange", "red", "orange", "green" ],
-  [ "green", "yellow", "yellow", "yellow" ]
+      [
+        "orange",
+        "green",
+        "green",
+        "red"
+      ],
+      [
+        "red",
+        "yellow",
+        "orange",
+        "red"
+      ],
+      [
+        "orange",
+        "red",
+        "orange",
+        "green"
+      ],
+      [
+        "green",
+        "yellow",
+        "yellow",
+        "yellow"
+      ]
     ]
   }
 }
