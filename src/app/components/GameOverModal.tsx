@@ -35,8 +35,8 @@ const GameOverModal = ({ puzzleNumber, grid, isOpen, onClose }: Props) => {
     <ModalComponent delayMs={2000} show={isOpen} onClose={onClose} showChildren={isOpen}>
       <div className="p-12 pt-9 text-center">
         <p className="mb-2 font-semibold text-dark-maroon">Sections #13</p>
-        <p className="mb-12 text-3xl" style={{ whiteSpace: "pre-line" }}>{getShareableEmojiScore(grid)}</p>
-        <button className="py-2 px-4 bg-amber-600 text-white font-medium rounded hover:bg-[#ad8b8b] w-full mb-6" onClick={copyScore}>
+        <p className="mb-5 text-3xl" style={{ whiteSpace: "pre-line" }}>{getShareableEmojiScore(grid)}</p>
+        <button className="py-2 px-4 bg-amber-600 text-white font-medium rounded-full hover:hover:bg-amber-700 w-full mb-6" onClick={copyScore}>
           Share
         </button>
       </div>

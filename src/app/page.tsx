@@ -112,9 +112,9 @@ export default function Home() {
       </div>
       {
         isGameOver ? (
-          <button onClick={() => setShowModal(true)} className="bg-amber-600 text-white font-bold py-2 px-4 rounded hover:bg-amber-700">See score</button>
+          <button onClick={() => setShowModal(true)} className="bg-amber-600 text-white font-bold py-2 px-4 rounded-full hover:bg-amber-700">See score</button>
         ) : (
-          <button onClick={() => handleMove()} className="bg-amber-600 text-white font-bold py-2 px-4 rounded hover:bg-amber-700">Shuffle</button>
+          <button onClick={() => handleMove()} className="bg-amber-600 text-white font-bold py-2 px-4 rounded-full hover:bg-amber-700">Shuffle</button>
         )
       }
       <GameOverModal puzzleNumber={puzzle.num} grid={grid} isOpen={showModal} onClose={() => setShowModal(false)} />
