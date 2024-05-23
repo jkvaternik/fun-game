@@ -93,7 +93,7 @@ export default function Home() {
         <h1 className="font-sans text-amber-700 font-semibold text-2xl">SECTIONS</h1>
       <InstructionsModal isOpen={showInstructionsModal} onClose={() => setShowInstructionsModal(false)} />
       <div className="flex flex-row gap-2 items-center">
-        <span className='text-amber-900'>Moves Left:</span>
+        <span className='text-amber-900'>Moves left:</span>
         {Array.from({ length: 3 - lives }, (_, index) => (
           <div
             key={index}
