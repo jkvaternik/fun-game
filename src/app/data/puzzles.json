@@ -133,13 +133,13 @@
       [
         "red",
         "green",
-        "green",
+        "yellow",
         "orange"
       ],
       [
         "red",
         "yellow",
-        "yellow",
+        "green",
         "yellow"
       ]
     ]
@@ -149,7 +149,7 @@
     "startingGrid": [
       [
         "yellow",
-        "yellow",
+        "orange",
         "yellow",
         "orange"
       ],
@@ -166,7 +166,7 @@
         "green"
       ],
       [
-        "orange",
+        "yellow",
         "red",
         "orange",
         "red"
@@ -214,7 +214,7 @@
       [
         "yellow",
         "red",
-        "red",
+        "green",
         "yellow"
       ],
       [
@@ -226,7 +226,7 @@
       [
         "orange",
         "green",
-        "green",
+        "red",
         "green"
       ]
     ]
@@ -237,7 +237,7 @@
       [
         "orange",
         "green",
-        "green",
+        "yellow",
         "red"
       ],
       [
@@ -255,8 +255,182 @@
       [
         "green",
         "yellow",
-        "yellow",
+        "green",
         "yellow"
+      ]
+    ]
+  },
+  "2024-05-31": {
+    "num": 22,
+    "startingGrid": [
+      [
+        "orange",
+        "orange",
+        "green",
+        "green"
+      ],
+      [
+        "yellow",
+        "red",
+        "green",
+        "orange"
+      ],
+      [
+        "red",
+        "orange",
+        "green",
+        "red"
+      ],
+      [
+        "yellow",
+        "yellow",
+        "yellow",
+        "red"
+      ]
+    ]
+  },
+  "2024-06-01": {
+    "num": 23,
+    "startingGrid": [
+      [
+        "orange",
+        "orange",
+        "yellow",
+        "red"
+      ],
+      [
+        "red",
+        "orange",
+        "yellow",
+        "orange"
+      ],
+      [
+        "green",
+        "yellow",
+        "yellow",
+        "red"
+      ],
+      [
+        "green",
+        "red",
+        "green",
+        "green"
+      ]
+    ]
+  },
+  "2024-06-02": {
+    "num": 24,
+    "startingGrid": [
+      [
+        "yellow",
+        "green",
+        "red",
+        "orange"
+      ],
+      [
+        "green",
+        "yellow",
+        "green",
+        "green"
+      ],
+      [
+        "yellow",
+        "yellow",
+        "orange",
+        "orange"
+      ],
+      [
+        "red",
+        "orange",
+        "red",
+        "red"
+      ]
+    ]
+  },
+  "2024-06-03": {
+    "num": 25,
+    "startingGrid": [
+      [
+        "orange",
+        "yellow",
+        "yellow",
+        "green"
+      ],
+      [
+        "green",
+        "red",
+        "orange",
+        "yellow"
+      ],
+      [
+        "yellow",
+        "red",
+        "red",
+        "orange"
+      ],
+      [
+        "orange",
+        "red",
+        "green",
+        "green"
+      ]
+    ]
+  },
+  "2024-06-04": {
+    "num": 26,
+    "startingGrid": [
+      [
+        "red",
+        "orange",
+        "yellow",
+        "red"
+      ],
+      [
+        "red",
+        "orange",
+        "orange",
+        "red"
+      ],
+      [
+        "yellow",
+        "green",
+        "orange",
+        "yellow"
+      ],
+      [
+        "green",
+        "yellow",
+        "green",
+        "green"
+      ]
+    ]
+  },
+  "2024-06-05": {
+    "num": 27,
+    "startingGrid": [
+      [
+        "orange",
+        "yellow",
+        "orange",
+        "yellow"
+      ],
+      [
+        "green",
+        "yellow",
+        "yellow",
+        "red"
+      ],
+      [
+        "green",
+        "red",
+        "orange",
+        "orange"
+      ],
+      [
+        "red",
+        "green",
+        "green",
+        "red"
       ]
     ]
   }
