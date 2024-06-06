@@ -433,5 +433,34 @@
         "red"
       ]
     ]
+  },
+  "2024-06-06": {
+    "num": 28,
+    "startingGrid": [
+      [
+        "orange",
+        "yellow",
+        "orange",
+        "yellow"
+      ],
+      [
+        "yellow",
+        "yellow",
+        "green",
+        "red"
+      ],
+      [
+        "green",
+        "orange",
+        "red",
+        "orange"
+      ],
+      [
+        "red",
+        "green",
+        "green",
+        "red"
+      ]
+    ]
   }
 }
