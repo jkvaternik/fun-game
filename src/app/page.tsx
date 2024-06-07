@@ -27,7 +27,12 @@ export default function Home() {
   }, [grid.length, puzzle?.startingGrid]);
 
   if (puzzle === null) {
-    return null;
+    return (
+      <main className="flex flex-col items-center mt-12 p-12 gap-5">
+        <h1 className="font-sans text-amber-700 font-semibold text-2xl">SECTIONS</h1>
+        <p className='text-amber-900'>Sorry, there was an issue generating the puzzle. Please refresh.</p>
+      </main>
+    );
   }
 
   const handleMove = () => {
