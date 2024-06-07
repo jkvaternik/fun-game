@@ -57,6 +57,19 @@ export const isNewDay = () => {
   }
 }
 
+export const isNewHour = () => {
+  if (typeof window !== 'undefined') {
+    const lastVisitDate = localStorage.getItem('lastVisit');
+    if (lastVisitDate === null) {
+      return true;
+    } else {
+      const oldDate = new Date(JSON.parse(lastVisitDate))
+      const newDate = new Date()
+      return oldDate.getHours() !== newDate.getHours() && oldDate.getDate() !== newDate.getDate();
+    }
+  }
+}
+
 export const getLocalStorageOrDefault = (key: string, defaultValue: any) => {
   if (typeof window !== 'undefined') {
     if (isNewDay()) {

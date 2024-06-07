@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import Cell from './components/Cell';
-import { generateRandomColor, getLocalStorageOrDefault, isNewVisitor, setLocalStorageAndState } from './utils';
+import { generateRandomColor, getLocalStorageOrDefault, isNewHour, isNewVisitor, setLocalStorageAndState } from './utils';
 import GameOverModal from './components/GameOverModal';
 import { InstructionsModal } from './components/InstructionsModal';
 import useDailyPuzzle, { GridCell } from './hooks/useDailyPuzzle';
@@ -21,7 +21,9 @@ export default function Home() {
     if(isNewVisitor()) {
       setShowInstructionsModal(true);
     }
-    localStorage.clear();
+    if(isNewHour()) {
+      localStorage.clear();
+    }
     localStorage.setItem('lastVisit', JSON.stringify(new Date().toLocaleString()));
     if (grid.length === 0) {
       setLocalStorageAndState('grid', puzzle?.startingGrid ?? [], setGrid);
