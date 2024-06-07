@@ -15,6 +15,7 @@ export default function Home() {
   const [lives, setLives] = React.useState<number>(getLocalStorageOrDefault('lives', 3));
   const [isGameOver, setIsGameOver] = React.useState<boolean>(getLocalStorageOrDefault('isGameOver', false));
   const [showModal, setShowModal] = React.useState<boolean>(getLocalStorageOrDefault('isGameOver', false));
+  const [noPuzzle, setNoPuzzle] = React.useState<boolean>(false);
 
   useEffect(() => {
     if(isNewVisitor()) {
@@ -24,9 +25,12 @@ export default function Home() {
     if (grid.length === 0) {
       setLocalStorageAndState('grid', puzzle?.startingGrid ?? [], setGrid);
     }
-  }, [grid.length, puzzle?.startingGrid]);
+    if (puzzle === null) {
+      setNoPuzzle(true);
+    }
+  }, [grid.length, puzzle?.startingGrid, puzzle]);
 
-  if (puzzle === null) {
+  if (noPuzzle) {
     return (
       <main className="flex flex-col items-center mt-12 p-12 gap-5">
         <h1 className="font-sans text-amber-700 font-semibold text-2xl">SECTIONS</h1>
