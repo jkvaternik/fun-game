@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import puzzlesData from '../data/puzzles.json';
 import { generateGrid } from '../utils';
 
+
 export type GridCell = {
   color: string;
   isFrozen: boolean;
@@ -25,19 +26,12 @@ const useDailyPuzzle: () => Puzzle | null = () => {
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
 
   useEffect(() => {
-    const today: string = getCurrentLocalDateAsString()
-    const dailyPuzzle: PuzzleInput = puzzles[today]
+    const today = getCurrentLocalDateAsInt()
+    const startingGrid: GridCell[][] = generateGrid(today);
 
-    const startingGrid: GridCell[][] = dailyPuzzle?.startingGrid.map(row => row.map(cell => {
-      return {
-        color: cell,
-        isFrozen: false,
-      }
-    }));
-
-    if (dailyPuzzle) {
+    if (startingGrid) {
       setPuzzle({
-        ...dailyPuzzle,
+        num: getPuzzleNum(),
         startingGrid: startingGrid
       });
     } else {
@@ -49,7 +43,22 @@ const useDailyPuzzle: () => Puzzle | null = () => {
   return puzzle;
 }
 
-const getCurrentLocalDateAsString = () => {
+const getPuzzleNum = () => {
+  const now = new Date();
+  const start = new Date(2024, 5, 9);
+  // Calculating the time difference
+  // of two dates
+  let Difference_In_Time = now.getTime() - start.getTime();
+
+  // Calculating the no. of days between
+  // two dates
+  let Difference_In_Days = Math.round
+    (Difference_In_Time / (1000 * 3600 * 24));
+
+  return Difference_In_Days
+}
+
+const getCurrentLocalDateAsInt = () => {
   const now = new Date();
   const year = now.getFullYear();
   const month = now.getMonth() + 1; // getMonth() returns 0-11
@@ -59,7 +68,7 @@ const getCurrentLocalDateAsString = () => {
   const formattedMonth = month < 10 ? `0${month}` : month;
   const formattedDay = day < 10 ? `0${day}` : day;
 
-  return `${year}-${formattedMonth}-${formattedDay}`;
+  return parseInt(`${year}${formattedMonth}${formattedDay}`);
 }
 
 export default useDailyPuzzle;

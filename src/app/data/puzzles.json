@@ -462,5 +462,63 @@
         "red"
       ]
     ]
+  },
+  "2024-06-07": {
+    "num": 29,
+    "startingGrid": [
+      [
+        "yellow",
+        "green",
+        "red",
+        "orange"
+      ],
+      [
+        "green",
+        "yellow",
+        "green",
+        "green"
+      ],
+      [
+        "yellow",
+        "red",
+        "orange",
+        "orange"
+      ],
+      [
+        "orange",
+        "red",
+        "yellow",
+        "red"
+      ]
+    ]
+  },
+  "2024-06-10": {
+    "num": 30,
+    "startingGrid": [
+      [
+        "yellow",
+        "green",
+        "orange",
+        "green"
+      ],
+      [
+        "green",
+        "yellow",
+        "green",
+        "red"
+      ],
+      [
+        "yellow",
+        "red",
+        "orange",
+        "orange"
+      ],
+      [
+        "orange",
+        "red",
+        "yellow",
+        "red"
+      ]
+    ]
   }
 }
