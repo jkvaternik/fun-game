@@ -21,6 +21,7 @@ export default function Home() {
     if(isNewVisitor()) {
       setShowInstructionsModal(true);
     }
+    localStorage.clear();
     localStorage.setItem('lastVisit', JSON.stringify(new Date().toLocaleString()));
     if (grid.length === 0) {
       setLocalStorageAndState('grid', puzzle?.startingGrid ?? [], setGrid);
@@ -30,13 +31,13 @@ export default function Home() {
     }
   }, [grid.length, puzzle?.startingGrid, puzzle]);
 
-  if (noPuzzle) {
-    return (
-      <main className="flex flex-col items-center mt-12 p-12 gap-5">
-        <h1 className="font-sans text-amber-700 font-semibold text-2xl">SECTIONS</h1>
-        <p className='text-amber-900'>Sorry, there was an issue generating today&#39;s starting grid. Please refresh your browser and try again.</p>
-      </main>
-    );
+  if (puzzle === null) {
+      return (
+        <main className="flex flex-col items-center mt-12 p-12 gap-5">
+          <h1 className="font-sans text-amber-700 font-semibold text-2xl">SECTIONS</h1>
+          <p className='text-amber-900'>Sorry, there was an issue generating today&#39;s starting grid. Please refresh your browser and try again.</p>
+        </main>
+      );
   }
 
   const handleMove = () => {

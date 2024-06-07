@@ -467,6 +467,35 @@
     "num": 29,
     "startingGrid": [
       [
+        "green",
+        "yellow",
+        "orange",
+        "yellow"
+      ],
+      [
+        "red",
+        "yellow",
+        "yellow",
+        "red"
+      ],
+      [
+        "green",
+        "red",
+        "orange",
+        "orange"
+      ],
+      [
+        "green",
+        "green",
+        "green",
+        "red"
+      ]
+    ]
+  },
+  "2024-06-08": {
+    "num": 30,
+    "startingGrid": [
+      [
         "yellow",
         "green",
         "red",
@@ -492,8 +521,8 @@
       ]
     ]
   },
-  "2024-06-08": {
-    "num": 30,
+  "2024-06-09": {
+    "num": 31,
     "startingGrid": [
       [
         "yellow",
