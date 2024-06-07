@@ -26,9 +26,16 @@ const useDailyPuzzle: () => Puzzle | null = () => {
   const [puzzle, setPuzzle] = useState<Puzzle | null>(null);
 
   useEffect(() => {
-    const today = getCurrentLocalDateAsInt()
-    const startingGrid: GridCell[][] = generateGrid(today);
+    const today: string = getCurrentLocalDateAsString()
+    const dailyPuzzle: PuzzleInput = puzzles[today]
 
+    const startingGrid: GridCell[][] = dailyPuzzle?.startingGrid.map(row => row.map(cell => {
+      return {
+        color: cell,
+        isFrozen: false,
+      }
+    }));
+    
     if (startingGrid) {
       setPuzzle({
         num: getPuzzleNum(),
@@ -69,6 +76,19 @@ const getCurrentLocalDateAsInt = () => {
   const formattedDay = day < 10 ? `0${day}` : day;
 
   return parseInt(`${year}${formattedMonth}${formattedDay}`);
+}
+
+const getCurrentLocalDateAsString = () => {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1; // getMonth() returns 0-11
+  const day = now.getDate();
+
+  // Pad the month and day with a leading zero if they are less than 10
+  const formattedMonth = month < 10 ? `0${month}` : month;
+  const formattedDay = day < 10 ? `0${day}` : day;
+
+  return `${year}${formattedMonth}${formattedDay}`;
 }
 
 export default useDailyPuzzle;
