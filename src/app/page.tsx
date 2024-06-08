@@ -21,9 +21,6 @@ export default function Home() {
     if(isNewVisitor()) {
       setShowInstructionsModal(true);
     }
-    if(isNewHour()) {
-      localStorage.clear();
-    }
     localStorage.setItem('lastVisit', JSON.stringify(new Date().toLocaleString()));
     if (grid.length === 0) {
       setLocalStorageAndState('grid', puzzle?.startingGrid ?? [], setGrid);
