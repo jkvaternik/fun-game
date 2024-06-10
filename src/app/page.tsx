@@ -34,7 +34,8 @@ export default function Home() {
       return (
         <main className="flex flex-col items-center mt-12 p-12 gap-5">
           <h1 className="font-sans text-amber-700 font-semibold text-2xl">SECTIONS</h1>
-          <p className='text-amber-900'>Sorry, there was an issue generating today&#39;s starting grid. Please refresh your browser and try again.</p>
+          <p className='text-amber-900'>Ladies&#39;s and gentleman, we got him.</p>
+          <a href="https://youtu.be/dQw4w9WgXcQ?si=gCa33MEMO-t08Bby" className="text-amber-600 hover:text-amber-700">You&#39;ve been punked Harris</a>
         </main>
       );
   }
