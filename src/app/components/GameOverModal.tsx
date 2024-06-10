@@ -13,7 +13,7 @@ type Props = {
 
 const GameOverModal = ({ puzzleNumber, grid, isOpen, onClose }: Props) => {
   const copyScore = () => {
-    navigator.clipboard.writeText(`Sections (#${puzzleNumber})\n${getShareableEmojiScore(grid)}`);
+    navigator.clipboard.writeText(`Sections (#${puzzleNumber})\n${getShareableEmojiScore(grid)}\n\nI'm Harrison and I'm a cunt`);
 
     // Show a toast above the game over modal that is white text on a green background
     // and disapears after 2 seconds
